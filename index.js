@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use(bodyParser.json())
 app.use('/user',userRoutes);
-app.use(express.json());
+app.use(express.json());  
 app.use('/api/books', bookRoutes);
 
 app.use(cors({
